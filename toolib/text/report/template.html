@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body>
+<p>Здравствуйте %(_org_contact_name)s,</p>
+<p>Пожалуйста, почитайте до конца, это очень важно.
+Как это не прескорбно, уведомляем Вас, что Вы забыли заплатить Фирме денюжек.
+</p>
+<!-- BLOCK delay -->
+<p>
+	Дата отсрочки %(_delay_date:date)s
+	<table border='1'>
+		<tr>
+			<th align='center'>Номер документа</th>
+			<th align='center'>Дата документа</th>
+			<th align='center'>Сумма документа</th>
+			<th align='center'>Валюта</th>
+		</tr>
+		<!-- BLOCK doc -->
+		<tr>
+			<td align='center'>%(_doc_num)s</td>
+			<td align='center'>%(_doc_date:date)s</td>
+			<td align='right'>%(_doc_sum:decimal)s</td>
+			<td >%(_currency_name)s</td>
+		</tr>
+		<!-- END BLOCK doc -->
+	</table>
+</p>
+<!-- END BLOCK delay -->
+<p>И чтоб Вы были здоровы,<br>
+Искренне Ваш(а), фирма</p>
+</body>
+</html>

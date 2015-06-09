@@ -1,0 +1,2 @@
+class Listener:
+	listenTo = 'noObject'

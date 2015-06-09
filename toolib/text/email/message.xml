@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='windows-1251'?>
+<email charset='utf-8'>
+<from>Злой Демон &lt;mailer-daemon@wwm.com.ua&gt;</from>
+<to>Сам себе &lt;me@zzz.ru&gt;,Доставка &lt;delivery@zzz.ru&gt;</to>
+<!--cc>
+	<address>cc@test.x</address>
+</cc>
+<bcc>
+	<address>bcc@test.x</address>
+</bcc>
+<sender>sender@text.x</sender-->
+<subject>Сабж собственно</subject>
+<attachments>
+	<attachment mimetype='text/html'>
+		<inline><![CDATA[<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<p>Здравствуйте</p>
+</body>
+</html>]]>
+		</inline>
+	</attachment>
+</attachments>
+</email>

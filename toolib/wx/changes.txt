@@ -1,0 +1,64 @@
+
+                             +------+
+                             |      |
+                             |      |
+                             |      |
+                     +-------+      +-------+
+                     |                      |
+                     |                      |
+                     +-------+      +-------+
+                             |      |
+                             |      |
+                             |      |
+                             |      |
+                             |      |
+                             |      |
+                             |      |
+         +-----------------------------------------------+
+         |                                               | 
+         |    Great Winter 2007 toolib.wx Refactoring    |
+         |                                               |
+         |           31.01.2007 - 08.02.2007             |
+         |                                               |
+         +-----------------------------------------------+
+
+
+
+toolib.wx.grid
+--------------
+	
+*	Workarounded wxPython bug with SetTable only once working
+	  - Have little grid speed decreese (GetAttr allways hooked via python)
+	  + Now can refa ObjectSetTable into two tables (inline and regular)
+	
+*	Huge Grid class splitted into traits and mixins
+	
+
+
+toolib.wx.menu
+--------------
+
++	now can define submenu items in menu config (fixed problem with submenu items in action config)
+
+	'items' : [
+		'a',
+		'b',
+		{
+			'id' : 'c',
+			'items' : ['c1','c2','c3'],
+		},
+		'd',
+	]
+
++	getDefaultMenuConfig accepts single config and creates different menues (using hit context)
+
++	Multiple Menu contexts now are supported. (Menu.setContext --> Menu.applyContexts)
+	
+!	ButtonResource config changed: 'context' is now dict (was tuple)
+	{
+		'context'	: {
+			'hit'		:	('rowlabel', 'collabel'),
+			'selection'	:	('single-row', 'single-col'),
+		}
+	}
+
